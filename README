@@ -1,17 +1,9 @@
-The aim of this project is to produce a plugin for the nakamura kernel that can
-resolve Groups from Grouper via the GrouperWS REST API.
+Re-bundle the Grouper components for OSGi so we can implement Grouper Web Services clients.
 
-Sakai3:
-http://sakaiproject.org/projects/sakai-3
-
-Nakamura (Sakai3 backend built on Apache Sling):
-https://confluence.sakaiproject.org/display/KERNDOC/Nakamura+Documentation
-
-Proposal for federating User and Group services in Nakamura:
-https://confluence.sakaiproject.org/display/KERNDOC/AuthorizableManager+Plugins
+You cannot run a Grouper server in the OSGi container with these bundles.
 
 Grouper:
 https://spaces.internet2.edu/display/Grouper/
 
-Grouper API:
+Grouper Web Services
 https://spaces.internet2.edu/display/Grouper/Grouper+Web+Services
