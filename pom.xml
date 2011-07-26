@@ -41,7 +41,7 @@
 
   <profiles>
     <profile>
-      <id>deploy</id>
+      <id>redeploy</id>
         <build>
           <plugins>
             <plugin>
