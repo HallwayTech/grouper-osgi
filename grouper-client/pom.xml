@@ -46,20 +46,25 @@
         <configuration>
           <instructions>
             <Bundle-Category>grouper</Bundle-Category>
-            <Embed-Dependency>ezmorph,json-lib,jdom,dom4j,jaxen,pull-parser</Embed-Dependency>
+            <Embed-Dependency>ezmorph,json-lib,jdom,dom4j,jaxen,pull-parser,joda-time,xom,xpp3_min,xml-resolver,commons-beanutils,jettison,xercesImpl,xmlpull</Embed-Dependency>
             <Import-Package>
-              		!org.quartz.*,
-              		!org.jivesoftware.*,
-          		com.sun.net.ssl;resolution:=optional,
-          		com.sun.msv.*;resolution:=optional,
-          		junit.*;resolution:=optional,
-          		net.sf.cglib.proxy;resolution:=optional,
-              		oracle.xml.parser.*;resolution:=optional,
-              		org.apache.oro.text.regex;resolution:=optional,
-              		org.gjt.xpp;resolution:=optional,
-          		sun.*;resolution:=optional,
-          		.;resolution:=optional,
-          		*
+                !org.quartz.*;resolution:=optional,
+                org.jivesoftware.*;resolution:=optional,
+                com.sun.net.ssl;resolution:=optional,
+                com.sun.msv.*;resolution:=optional,
+                com.sun.org.apache.xerces.*;resolution:=optional,
+                com.ibm.icu.*;resolution:=optional,
+                org.apache.commons.beanutils;resolution:=optional,
+                junit.*;resolution:=optional,
+                net.sf.cglib.proxy;resolution:=optional,
+                oracle.xml.parser.*;resolution:=optional,
+                org.apache.oro.text.regex;resolution:=optional,
+                org.gjt.xpp;resolution:=optional,
+                sun.*;resolution:=optional,
+                org.apache.xerces.*;resolution:=optional,
+                org.codehaus.jettison.mapped;resolution:=optional,
+                .;resolution:=optional,
+                *
             </Import-Package>
             <Private-Package>edu.internet2.middleware.grouperClientExt.*</Private-Package>
             <Export-Package>edu.internet2.middleware.grouperClient.*;version=1.7.0</Export-Package>
@@ -92,11 +97,11 @@
       <version>1.1.1</version>
     </dependency>
     <dependency>
-	<groupId>net.sf.ezmorph</groupId>
-	<artifactId>ezmorph</artifactId>
-	<version>1.0.6</version>
-	<type>jar</type>
-	<scope>compile</scope>
+    <groupId>net.sf.ezmorph</groupId>
+    <artifactId>ezmorph</artifactId>
+    <version>1.0.6</version>
+    <type>jar</type>
+    <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>net.sf.json-lib</groupId>
@@ -105,6 +110,46 @@
       <type>jar</type>
       <classifier>jdk15</classifier>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+      <version>1.6.2</version>
+    </dependency>
+    <dependency>
+        <groupId>xom</groupId>
+        <artifactId>xom</artifactId>
+        <version>1.2.5</version>
+    </dependency>
+    <dependency>
+        <groupId>xpp3</groupId>
+        <artifactId>xpp3_min</artifactId>
+        <version>1.1.4c</version>
+    </dependency>
+    <dependency>
+        <groupId>xml-resolver</groupId>
+        <artifactId>xml-resolver</artifactId>
+        <version>1.2</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-beanutils</groupId>
+        <artifactId>commons-beanutils</artifactId>
+        <version>1.8.3</version>
+    </dependency>
+    <dependency>
+        <groupId>org.codehaus.jettison</groupId>
+        <artifactId>jettison</artifactId>
+        <version>1.2</version>
+    </dependency>
+    <dependency>
+        <groupId>xerces</groupId>
+        <artifactId>xercesImpl</artifactId>
+        <version>2.9.1</version>
+    </dependency>
+    <dependency>
+        <groupId>xmlpull</groupId>
+        <artifactId>xmlpull</artifactId>
+        <version>1.1.3.4d_b4_min</version>
     </dependency>
   </dependencies>
 </project>
